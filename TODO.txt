@@ -1,4 +1,3 @@
 - Make mathematica notebook for the scattering problem as python is cringe about it
 - Remember to do the sum in problem 1
-- See if I have the correct Wavefunctions in problem of the harmonic oscillator
--Remember to do the integrals Sympy cannot do in Mathematica
+
