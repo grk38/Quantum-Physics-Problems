@@ -1,0 +1,131 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3897,        123]
+NotebookOptionsPosition[      3086,        101]
+NotebookOutlinePosition[      3508,        117]
+CellTagsIndexPosition[      3465,        114]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Z", " ", "=", " ", 
+  RowBox[{"Assuming", "[", 
+   RowBox[{
+    RowBox[{"T", ">", "0"}], ",", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      RowBox[{"Exp", "[", 
+       RowBox[{
+        RowBox[{"-", "n"}], "*", 
+        RowBox[{"e", "/", 
+         RowBox[{"(", 
+          RowBox[{"k", "*", "T"}], ")"}]}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "0", ",", "Infinity"}], "}"}]}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9270114987140026`*^9, 3.9270115860996866`*^9}, {
+  3.9270116356180277`*^9, 3.9270116358721848`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"58c92248-acd7-4553-87e6-3421ad8bbaf6"],
+
+Cell[BoxData[
+ FractionBox[
+  SuperscriptBox["\[ExponentialE]", 
+   FractionBox["e", 
+    RowBox[{"k", " ", "T"}]]], 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   SuperscriptBox["\[ExponentialE]", 
+    FractionBox["e", 
+     RowBox[{"k", " ", "T"}]]]}]]], "Output",
+ CellChangeTimes->{{3.9270115465555816`*^9, 3.9270115870883904`*^9}, 
+   3.9270116365432425`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"438c055d-050e-4af6-94b9-4b613ea9eafa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Thus", " ", "the", " ", "average", " ", "energy", " ", "is", " ", "gonna",
+     " ", "be"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"averageEnergy", " ", "=", " ", 
+   RowBox[{"Sum", "[", 
+    RowBox[{
+     RowBox[{"n", "*", "e", "*", 
+      FractionBox[
+       RowBox[{"Exp", "[", 
+        RowBox[{
+         RowBox[{"-", "n"}], "*", 
+         RowBox[{"e", "/", 
+          RowBox[{"(", 
+           RowBox[{"k", "*", "T"}], ")"}]}]}], "]"}], "Z"]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "0", ",", "Infinity"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.927011598142191*^9, 3.927011660475481*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"a44675c4-1c30-427f-8659-8f3fb0949ba9"],
+
+Cell[BoxData[
+ FractionBox["e", 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   SuperscriptBox["\[ExponentialE]", 
+    FractionBox["e", 
+     RowBox[{"k", " ", "T"}]]]}]]], "Output",
+ CellChangeTimes->{{3.92701165717671*^9, 3.9270116611666408`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"9eac1656-7b8a-442f-a4d2-340142985a8a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "This", " ", "of", " ", "course", " ", "agrees", " ", "with", " ", 
+   "theory"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.9270116668779373`*^9, 
+  3.9270116733001394`*^9}},ExpressionUUID->"4351a15a-c2ab-49ec-93e3-\
+92b8755a15cf"]
+},
+WindowSize->{574.8, 573.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c04c332f-4c8f-499f-ae9e-9dc1df61c6ed"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 654, 18, 28, "Input",ExpressionUUID->"58c92248-acd7-4553-87e6-3421ad8bbaf6"],
+Cell[1237, 42, 439, 12, 66, "Output",ExpressionUUID->"438c055d-050e-4af6-94b9-4b613ea9eafa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1713, 59, 755, 20, 65, "Input",ExpressionUUID->"a44675c4-1c30-427f-8659-8f3fb0949ba9"],
+Cell[2471, 81, 323, 8, 55, "Output",ExpressionUUID->"9eac1656-7b8a-442f-a4d2-340142985a8a"]
+}, Open  ]],
+Cell[2809, 92, 273, 7, 28, "Input",ExpressionUUID->"4351a15a-c2ab-49ec-93e3-92b8755a15cf"]
+}
+]
+*)
+
