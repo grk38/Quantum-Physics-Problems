@@ -1,1 +1,0 @@
-- Make mathematica notebook for the scattering problem as python is cringe about it
